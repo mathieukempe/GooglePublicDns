@@ -9,7 +9,6 @@ var res = client.Resolve("selz.com",RecordType.ANY).Result;
 
 foreach (var answer in res.Answer)
 {
-    
     Console.WriteLine("Name: " + answer.Name);
     Console.WriteLine("TTL:" + answer.TTL);
     Console.WriteLine("Type:" + answer.Type);
