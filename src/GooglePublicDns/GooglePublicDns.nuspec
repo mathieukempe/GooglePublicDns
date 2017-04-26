@@ -13,6 +13,10 @@
     <description>$description$</description>
     <releaseNotes>First release</releaseNotes>	
     <copyright>Copyright 2017</copyright>
-    <tags>Google Dns HTTPS</tags>
+    <tags>Google Dns HTTPS</tags>	 
+	<files>
+		<file src="bin\Release\GooglePublicDns.dll" target="lib\netstandard1.4\GooglePublicDns.dll" />
+		<file src="bin\Release\GooglePublicDns.xml" target="lib\netstandard1.4\GooglePublicDns.xml" />
+	</files>
   </metadata>
 </package>
