@@ -11,7 +11,7 @@ foreach (var answer in res.Answer)
 {
     
     Console.WriteLine("Name: " + answer.Name);
-    Console.WriteLine("TTL" + answer.TTL);
+    Console.WriteLine("TTL:" + answer.TTL);
     Console.WriteLine("Type:" + answer.Type);
     Console.WriteLine("Data:" + answer.Data);
 }
