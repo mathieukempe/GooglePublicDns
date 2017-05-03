@@ -1,7 +1,6 @@
 <?xml version="1.0"?>
-<package >
- <package >
-  <metadata>
+<package>
+   <metadata>
     <id>$id$</id>
     <version>$version$</version>
     <title>$title$</title>
@@ -13,10 +12,13 @@
     <description>$description$</description>
     <releaseNotes>First release</releaseNotes>	
     <copyright>Copyright 2017</copyright>
-    <tags>Google Dns HTTPS</tags>	 
-	<files>
-		<file src="bin\Release\GooglePublicDns.dll" target="lib\netstandard1.4\GooglePublicDns.dll" />
-		<file src="bin\Release\GooglePublicDns.xml" target="lib\netstandard1.4\GooglePublicDns.xml" />
-	</files>
+    <tags>Google Dns HTTPS</tags>	 	
+	<dependencies>
+		<dependency id="Newtonsoft.Json" version="9.0" />
+	</dependencies>
   </metadata>
+  <files>
+	<file src="bin\Release\GooglePublicDns.dll" target="lib\netstandard1.4\GooglePublicDns.dll" />
+	<file src="bin\Release\GooglePublicDns.xml" target="lib\netstandard1.4\GooglePublicDns.xml" />
+  </files>  
 </package>
