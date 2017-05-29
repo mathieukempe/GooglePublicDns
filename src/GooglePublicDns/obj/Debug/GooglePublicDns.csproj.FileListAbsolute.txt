@@ -1,8 +1,0 @@
-D:\Sources\GooglePublicDns\GooglePublicDns\bin\Debug\GooglePublicDns.dll
-D:\Sources\GooglePublicDns\GooglePublicDns\bin\Debug\GooglePublicDns.pdb
-D:\Sources\GooglePublicDns\GooglePublicDns\obj\Debug\GooglePublicDns.dll
-D:\Sources\GooglePublicDns\GooglePublicDns\obj\Debug\GooglePublicDns.pdb
-D:\Sources\GooglePublicDns\src\GooglePublicDns\bin\Debug\GooglePublicDns.dll
-D:\Sources\GooglePublicDns\src\GooglePublicDns\bin\Debug\GooglePublicDns.pdb
-D:\Sources\GooglePublicDns\src\GooglePublicDns\obj\Debug\GooglePublicDns.dll
-D:\Sources\GooglePublicDns\src\GooglePublicDns\obj\Debug\GooglePublicDns.pdb
