@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <Description>GooglePublicDns</Description>
-    <Authors>Mathieu Kemp;Jing Wu</Authors>
+    <Authors>Mathieu Kemp</Authors>
     <TargetFrameworks>netstandard1.3;net452</TargetFrameworks>
     <AssemblyName>GooglePublicDns</AssemblyName>
     <PackageId>GooglePublicDns</PackageId>
@@ -13,7 +13,7 @@
     <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
     <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
     <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
-    <Version>1.0.0</Version>
+    <Version>1.1.0</Version>
     <Copyright>Copyright ©2016 Selz.com Pty Ltd</Copyright>
   </PropertyGroup>
 
@@ -26,9 +26,5 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Net.Http" />
   </ItemGroup>
-  
-  <ItemGroup>
-    <Folder Include="Properties\" />
-  </ItemGroup>
-  
+    
 </Project>
