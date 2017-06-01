@@ -40,7 +40,7 @@ namespace GooglePublicDns
                 query += "&random_padding=" + randomPadding;
             }
 
-            HttpResponseMessage response = await client.GetAsync(BaseUrl + query);
+            HttpResponseMessage response = await client.GetAsync(BaseUrl + query).ConfigureAwait(false);
 
             var body = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
 

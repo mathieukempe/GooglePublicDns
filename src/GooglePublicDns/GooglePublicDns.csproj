@@ -2,23 +2,25 @@
 
   <PropertyGroup>
     <Description>GooglePublicDns</Description>
-    <Authors>Mathieu Kemp</Authors>
+    <Authors>Mathieu Kempe, Jing Wu</Authors>
     <TargetFrameworks>netstandard1.3;net452</TargetFrameworks>
     <AssemblyName>GooglePublicDns</AssemblyName>
     <PackageId>GooglePublicDns</PackageId>
     <PackageTags>Google;Dns;HTTPS</PackageTags>
-    <PackageIconUrl>https://selz.com/assets/app-icons/favicon/32x32.png</PackageIconUrl>
+    <PackageIconUrl></PackageIconUrl>
     <PackageProjectUrl>https://github.com/mathieukempe/GooglePublicDns</PackageProjectUrl>
     <PackageLicenseUrl>https://github.com/mathieukempe/GooglePublicDns/blob/master/LICENSE</PackageLicenseUrl>
     <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
     <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
     <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
-    <Version>1.1.0</Version>
-    <Copyright>Copyright ©2016 Selz.com Pty Ltd</Copyright>
+    <Version>1.1.1</Version>
+    <Copyright>Copyright ©2017</Copyright>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="9.0.1" />
+    <PackageReference Include="NuGet.CommandLine" Version="4.1.0" />
   </ItemGroup>
   
   <ItemGroup Condition=" '$(TargetFramework)' == 'net452' ">
