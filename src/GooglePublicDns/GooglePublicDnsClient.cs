@@ -7,7 +7,9 @@ namespace GooglePublicDns
 {
     public class GooglePublicDnsClient
     {
-        private static HttpClient _client;
+        public const string BaseUrl = "https://dns.google.com/resolve?";
+
+        private static readonly HttpClient Client = new HttpClient();
 
         /// <summary>
         /// Instantiate client
@@ -15,11 +17,7 @@ namespace GooglePublicDns
         /// <param name="timeout">Timespan to wait before the request times out (miliseconds)</param>
         public GooglePublicDnsClient(long timeout = 1000)
         {
-            _client = new HttpClient
-            {
-                BaseAddress = new Uri("https://dns.google.com/"),
-                Timeout = TimeSpan.FromMilliseconds(timeout)
-            };
+            Client.Timeout = TimeSpan.FromMilliseconds(timeout);
         }
 
         /// <summary>
@@ -53,7 +51,7 @@ namespace GooglePublicDns
                     query += "&random_padding=" + randomPadding;
                 }
 
-                HttpResponseMessage response = await _client.GetAsync($"resolve?{query}").ConfigureAwait(false);
+                HttpResponseMessage response = await Client.GetAsync(BaseUrl + query).ConfigureAwait(false);
 
                 var body = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
 
